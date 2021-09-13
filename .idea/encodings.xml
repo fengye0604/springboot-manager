@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-dubbo/example-dubbo-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-dubbo/example-dubbo-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-dubbo/example-dubbo-interface/example-dubbo-provide" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-dubbo/example-dubbo-provide" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-elasicjob" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-elasticjob2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-elasticsearch-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-elasticsearch-data/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/example-job" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-job/job-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-job/job-elastic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-job/job-quartz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-job/job-scheduled" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-job/job-timer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-job/job-xxl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-mult-datasource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-mult-datasource/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/example-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-rocketmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-rocketmq-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-rocketmq-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-rocketmq-template" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-shiro" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/example-zklock" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,1790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.examplerocketmqproducer.dao.oracle.PersoninfoMapper">
+  <resultMap id="BaseResultMap" type="com.example.examplerocketmqproducer.bean.Personinfo">
+    <constructor>
+      <idArg column="OPPID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PERSON_NUM" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PERSON_NAME" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="GENDER" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="NATIONAL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="IDNUM" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="BIRTHDAY" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="AGE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="HUKOU" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="MOBILE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PHONE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CADDRESS" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="RADDRESS" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LEVELEDU" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="FULLTIME" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PROFESSIONAL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="POLITICAL_STATUS" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="MARRIAGE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="HEALTH" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="QUALIFICATION" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SPECIALTY" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PERSON_UID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JOBS" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="TEAM" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JOBS_SAL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="EFFECT" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="TOTAL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="WORKTYPE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LEVEL1" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="MEMBERSHIP" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SEND" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JOINDATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="MINDATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PROBATION" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CSIGNDATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="ZSIGN1DATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="XSIGN2DATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="DEPARTURE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LEAVEDATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="GJJACCOUNT" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="STATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JJCONTACT" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JJPHONE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JJNAME" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JOB_ADDRESS" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SKILL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LEVEL2" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="WAGE_NUM" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATERID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATETIME" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="UPDATEID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="UPDATETIME" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="REMARK" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="DEPT" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="FJID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="FLAG" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="DAYS" javaType="java.math.BigDecimal" jdbcType="DECIMAL" />
+      <arg column="PARK" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="UNIVERSITY" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SFSZ" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SZSCHOOL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SZZY" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JOBS_ID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SKILL_ID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="COUNTRY" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="NATIVEPLACE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="BIRTHPLACE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PROFILE_LOC" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="VETERAN" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="VETERAN_TIME" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="WORK_TIME" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="CERTIFIED" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="EMAIL" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    OPPID, PERSON_NUM, PERSON_NAME, GENDER, NATIONAL, IDNUM, BIRTHDAY, AGE, HUKOU, MOBILE, 
+    PHONE, CADDRESS, RADDRESS, LEVELEDU, FULLTIME, PROFESSIONAL, POLITICAL_STATUS, MARRIAGE, 
+    HEALTH, QUALIFICATION, SPECIALTY, PERSON_UID, JOBS, TEAM, JOBS_SAL, EFFECT, TOTAL, 
+    WORKTYPE, LEVEL1, MEMBERSHIP, SEND, JOINDATE, MINDATE, PROBATION, CSIGNDATE, ZSIGN1DATE, 
+    XSIGN2DATE, DEPARTURE, LEAVEDATE, GJJACCOUNT, STATE, JJCONTACT, JJPHONE, JJNAME, 
+    JOB_ADDRESS, SKILL, LEVEL2, WAGE_NUM, CREATERID, CREATETIME, UPDATEID, UPDATETIME, 
+    REMARK, DEPT, FJID, FLAG, DAYS, PARK, UNIVERSITY, SFSZ, SZSCHOOL, SZZY, JOBS_ID, 
+    SKILL_ID, COUNTRY, NATIVEPLACE, BIRTHPLACE, PROFILE_LOC, VETERAN, VETERAN_TIME, WORK_TIME, 
+    CERTIFIED, EMAIL
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from OMSS_PERSONNEL_PERSONINFO
+    where OPPID = #{oppid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from OMSS_PERSONNEL_PERSONINFO
+    where OPPID = #{oppid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.example.examplerocketmqproducer.bean.Personinfo">
+    insert into OMSS_PERSONNEL_PERSONINFO (OPPID, PERSON_NUM, PERSON_NAME, 
+      GENDER, NATIONAL, IDNUM, 
+      BIRTHDAY, AGE, HUKOU, 
+      MOBILE, PHONE, CADDRESS, 
+      RADDRESS, LEVELEDU, FULLTIME, 
+      PROFESSIONAL, POLITICAL_STATUS, MARRIAGE, 
+      HEALTH, QUALIFICATION, SPECIALTY, 
+      PERSON_UID, JOBS, TEAM, 
+      JOBS_SAL, EFFECT, TOTAL, 
+      WORKTYPE, LEVEL1, MEMBERSHIP, 
+      SEND, JOINDATE, MINDATE, 
+      PROBATION, CSIGNDATE, ZSIGN1DATE, 
+      XSIGN2DATE, DEPARTURE, LEAVEDATE, 
+      GJJACCOUNT, STATE, JJCONTACT, 
+      JJPHONE, JJNAME, JOB_ADDRESS, 
+      SKILL, LEVEL2, WAGE_NUM, 
+      CREATERID, CREATETIME, UPDATEID, 
+      UPDATETIME, REMARK, DEPT, 
+      FJID, FLAG, DAYS, PARK, 
+      UNIVERSITY, SFSZ, SZSCHOOL, 
+      SZZY, JOBS_ID, SKILL_ID, 
+      COUNTRY, NATIVEPLACE, BIRTHPLACE, 
+      PROFILE_LOC, VETERAN, VETERAN_TIME, 
+      WORK_TIME, CERTIFIED, EMAIL
+      )
+    values (#{oppid,jdbcType=VARCHAR}, #{personNum,jdbcType=VARCHAR}, #{personName,jdbcType=VARCHAR}, 
+      #{gender,jdbcType=VARCHAR}, #{national,jdbcType=VARCHAR}, #{idnum,jdbcType=VARCHAR}, 
+      #{birthday,jdbcType=VARCHAR}, #{age,jdbcType=VARCHAR}, #{hukou,jdbcType=VARCHAR}, 
+      #{mobile,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{caddress,jdbcType=VARCHAR}, 
+      #{raddress,jdbcType=VARCHAR}, #{leveledu,jdbcType=VARCHAR}, #{fulltime,jdbcType=VARCHAR}, 
+      #{professional,jdbcType=VARCHAR}, #{politicalStatus,jdbcType=VARCHAR}, #{marriage,jdbcType=VARCHAR}, 
+      #{health,jdbcType=VARCHAR}, #{qualification,jdbcType=VARCHAR}, #{specialty,jdbcType=VARCHAR}, 
+      #{personUid,jdbcType=VARCHAR}, #{jobs,jdbcType=VARCHAR}, #{team,jdbcType=VARCHAR}, 
+      #{jobsSal,jdbcType=VARCHAR}, #{effect,jdbcType=VARCHAR}, #{total,jdbcType=VARCHAR}, 
+      #{worktype,jdbcType=VARCHAR}, #{level1,jdbcType=VARCHAR}, #{membership,jdbcType=VARCHAR}, 
+      #{send,jdbcType=VARCHAR}, #{joindate,jdbcType=VARCHAR}, #{mindate,jdbcType=VARCHAR}, 
+      #{probation,jdbcType=VARCHAR}, #{csigndate,jdbcType=VARCHAR}, #{zsign1date,jdbcType=VARCHAR}, 
+      #{xsign2date,jdbcType=VARCHAR}, #{departure,jdbcType=VARCHAR}, #{leavedate,jdbcType=VARCHAR}, 
+      #{gjjaccount,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR}, #{jjcontact,jdbcType=VARCHAR}, 
+      #{jjphone,jdbcType=VARCHAR}, #{jjname,jdbcType=VARCHAR}, #{jobAddress,jdbcType=VARCHAR}, 
+      #{skill,jdbcType=VARCHAR}, #{level2,jdbcType=VARCHAR}, #{wageNum,jdbcType=VARCHAR}, 
+      #{createrid,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{updateid,jdbcType=VARCHAR}, 
+      #{updatetime,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR}, #{dept,jdbcType=VARCHAR}, 
+      #{fjid,jdbcType=VARCHAR}, #{flag,jdbcType=VARCHAR}, #{days,jdbcType=DECIMAL}, #{park,jdbcType=VARCHAR}, 
+      #{university,jdbcType=VARCHAR}, #{sfsz,jdbcType=VARCHAR}, #{szschool,jdbcType=VARCHAR}, 
+      #{szzy,jdbcType=VARCHAR}, #{jobsId,jdbcType=VARCHAR}, #{skillId,jdbcType=VARCHAR}, 
+      #{country,jdbcType=VARCHAR}, #{nativeplace,jdbcType=VARCHAR}, #{birthplace,jdbcType=VARCHAR}, 
+      #{profileLoc,jdbcType=VARCHAR}, #{veteran,jdbcType=VARCHAR}, #{veteranTime,jdbcType=TIMESTAMP}, 
+      #{workTime,jdbcType=TIMESTAMP}, #{certified,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.examplerocketmqproducer.bean.Personinfo">
+    insert into OMSS_PERSONNEL_PERSONINFO
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="oppid != null">
+        OPPID,
+      </if>
+      <if test="personNum != null">
+        PERSON_NUM,
+      </if>
+      <if test="personName != null">
+        PERSON_NAME,
+      </if>
+      <if test="gender != null">
+        GENDER,
+      </if>
+      <if test="national != null">
+        NATIONAL,
+      </if>
+      <if test="idnum != null">
+        IDNUM,
+      </if>
+      <if test="birthday != null">
+        BIRTHDAY,
+      </if>
+      <if test="age != null">
+        AGE,
+      </if>
+      <if test="hukou != null">
+        HUKOU,
+      </if>
+      <if test="mobile != null">
+        MOBILE,
+      </if>
+      <if test="phone != null">
+        PHONE,
+      </if>
+      <if test="caddress != null">
+        CADDRESS,
+      </if>
+      <if test="raddress != null">
+        RADDRESS,
+      </if>
+      <if test="leveledu != null">
+        LEVELEDU,
+      </if>
+      <if test="fulltime != null">
+        FULLTIME,
+      </if>
+      <if test="professional != null">
+        PROFESSIONAL,
+      </if>
+      <if test="politicalStatus != null">
+        POLITICAL_STATUS,
+      </if>
+      <if test="marriage != null">
+        MARRIAGE,
+      </if>
+      <if test="health != null">
+        HEALTH,
+      </if>
+      <if test="qualification != null">
+        QUALIFICATION,
+      </if>
+      <if test="specialty != null">
+        SPECIALTY,
+      </if>
+      <if test="personUid != null">
+        PERSON_UID,
+      </if>
+      <if test="jobs != null">
+        JOBS,
+      </if>
+      <if test="team != null">
+        TEAM,
+      </if>
+      <if test="jobsSal != null">
+        JOBS_SAL,
+      </if>
+      <if test="effect != null">
+        EFFECT,
+      </if>
+      <if test="total != null">
+        TOTAL,
+      </if>
+      <if test="worktype != null">
+        WORKTYPE,
+      </if>
+      <if test="level1 != null">
+        LEVEL1,
+      </if>
+      <if test="membership != null">
+        MEMBERSHIP,
+      </if>
+      <if test="send != null">
+        SEND,
+      </if>
+      <if test="joindate != null">
+        JOINDATE,
+      </if>
+      <if test="mindate != null">
+        MINDATE,
+      </if>
+      <if test="probation != null">
+        PROBATION,
+      </if>
+      <if test="csigndate != null">
+        CSIGNDATE,
+      </if>
+      <if test="zsign1date != null">
+        ZSIGN1DATE,
+      </if>
+      <if test="xsign2date != null">
+        XSIGN2DATE,
+      </if>
+      <if test="departure != null">
+        DEPARTURE,
+      </if>
+      <if test="leavedate != null">
+        LEAVEDATE,
+      </if>
+      <if test="gjjaccount != null">
+        GJJACCOUNT,
+      </if>
+      <if test="state != null">
+        STATE,
+      </if>
+      <if test="jjcontact != null">
+        JJCONTACT,
+      </if>
+      <if test="jjphone != null">
+        JJPHONE,
+      </if>
+      <if test="jjname != null">
+        JJNAME,
+      </if>
+      <if test="jobAddress != null">
+        JOB_ADDRESS,
+      </if>
+      <if test="skill != null">
+        SKILL,
+      </if>
+      <if test="level2 != null">
+        LEVEL2,
+      </if>
+      <if test="wageNum != null">
+        WAGE_NUM,
+      </if>
+      <if test="createrid != null">
+        CREATERID,
+      </if>
+      <if test="createtime != null">
+        CREATETIME,
+      </if>
+      <if test="updateid != null">
+        UPDATEID,
+      </if>
+      <if test="updatetime != null">
+        UPDATETIME,
+      </if>
+      <if test="remark != null">
+        REMARK,
+      </if>
+      <if test="dept != null">
+        DEPT,
+      </if>
+      <if test="fjid != null">
+        FJID,
+      </if>
+      <if test="flag != null">
+        FLAG,
+      </if>
+      <if test="days != null">
+        DAYS,
+      </if>
+      <if test="park != null">
+        PARK,
+      </if>
+      <if test="university != null">
+        UNIVERSITY,
+      </if>
+      <if test="sfsz != null">
+        SFSZ,
+      </if>
+      <if test="szschool != null">
+        SZSCHOOL,
+      </if>
+      <if test="szzy != null">
+        SZZY,
+      </if>
+      <if test="jobsId != null">
+        JOBS_ID,
+      </if>
+      <if test="skillId != null">
+        SKILL_ID,
+      </if>
+      <if test="country != null">
+        COUNTRY,
+      </if>
+      <if test="nativeplace != null">
+        NATIVEPLACE,
+      </if>
+      <if test="birthplace != null">
+        BIRTHPLACE,
+      </if>
+      <if test="profileLoc != null">
+        PROFILE_LOC,
+      </if>
+      <if test="veteran != null">
+        VETERAN,
+      </if>
+      <if test="veteranTime != null">
+        VETERAN_TIME,
+      </if>
+      <if test="workTime != null">
+        WORK_TIME,
+      </if>
+      <if test="certified != null">
+        CERTIFIED,
+      </if>
+      <if test="email != null">
+        EMAIL,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="oppid != null">
+        #{oppid,jdbcType=VARCHAR},
+      </if>
+      <if test="personNum != null">
+        #{personNum,jdbcType=VARCHAR},
+      </if>
+      <if test="personName != null">
+        #{personName,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="national != null">
+        #{national,jdbcType=VARCHAR},
+      </if>
+      <if test="idnum != null">
+        #{idnum,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="hukou != null">
+        #{hukou,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="caddress != null">
+        #{caddress,jdbcType=VARCHAR},
+      </if>
+      <if test="raddress != null">
+        #{raddress,jdbcType=VARCHAR},
+      </if>
+      <if test="leveledu != null">
+        #{leveledu,jdbcType=VARCHAR},
+      </if>
+      <if test="fulltime != null">
+        #{fulltime,jdbcType=VARCHAR},
+      </if>
+      <if test="professional != null">
+        #{professional,jdbcType=VARCHAR},
+      </if>
+      <if test="politicalStatus != null">
+        #{politicalStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="marriage != null">
+        #{marriage,jdbcType=VARCHAR},
+      </if>
+      <if test="health != null">
+        #{health,jdbcType=VARCHAR},
+      </if>
+      <if test="qualification != null">
+        #{qualification,jdbcType=VARCHAR},
+      </if>
+      <if test="specialty != null">
+        #{specialty,jdbcType=VARCHAR},
+      </if>
+      <if test="personUid != null">
+        #{personUid,jdbcType=VARCHAR},
+      </if>
+      <if test="jobs != null">
+        #{jobs,jdbcType=VARCHAR},
+      </if>
+      <if test="team != null">
+        #{team,jdbcType=VARCHAR},
+      </if>
+      <if test="jobsSal != null">
+        #{jobsSal,jdbcType=VARCHAR},
+      </if>
+      <if test="effect != null">
+        #{effect,jdbcType=VARCHAR},
+      </if>
+      <if test="total != null">
+        #{total,jdbcType=VARCHAR},
+      </if>
+      <if test="worktype != null">
+        #{worktype,jdbcType=VARCHAR},
+      </if>
+      <if test="level1 != null">
+        #{level1,jdbcType=VARCHAR},
+      </if>
+      <if test="membership != null">
+        #{membership,jdbcType=VARCHAR},
+      </if>
+      <if test="send != null">
+        #{send,jdbcType=VARCHAR},
+      </if>
+      <if test="joindate != null">
+        #{joindate,jdbcType=VARCHAR},
+      </if>
+      <if test="mindate != null">
+        #{mindate,jdbcType=VARCHAR},
+      </if>
+      <if test="probation != null">
+        #{probation,jdbcType=VARCHAR},
+      </if>
+      <if test="csigndate != null">
+        #{csigndate,jdbcType=VARCHAR},
+      </if>
+      <if test="zsign1date != null">
+        #{zsign1date,jdbcType=VARCHAR},
+      </if>
+      <if test="xsign2date != null">
+        #{xsign2date,jdbcType=VARCHAR},
+      </if>
+      <if test="departure != null">
+        #{departure,jdbcType=VARCHAR},
+      </if>
+      <if test="leavedate != null">
+        #{leavedate,jdbcType=VARCHAR},
+      </if>
+      <if test="gjjaccount != null">
+        #{gjjaccount,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null">
+        #{state,jdbcType=VARCHAR},
+      </if>
+      <if test="jjcontact != null">
+        #{jjcontact,jdbcType=VARCHAR},
+      </if>
+      <if test="jjphone != null">
+        #{jjphone,jdbcType=VARCHAR},
+      </if>
+      <if test="jjname != null">
+        #{jjname,jdbcType=VARCHAR},
+      </if>
+      <if test="jobAddress != null">
+        #{jobAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="skill != null">
+        #{skill,jdbcType=VARCHAR},
+      </if>
+      <if test="level2 != null">
+        #{level2,jdbcType=VARCHAR},
+      </if>
+      <if test="wageNum != null">
+        #{wageNum,jdbcType=VARCHAR},
+      </if>
+      <if test="createrid != null">
+        #{createrid,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateid != null">
+        #{updateid,jdbcType=VARCHAR},
+      </if>
+      <if test="updatetime != null">
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="dept != null">
+        #{dept,jdbcType=VARCHAR},
+      </if>
+      <if test="fjid != null">
+        #{fjid,jdbcType=VARCHAR},
+      </if>
+      <if test="flag != null">
+        #{flag,jdbcType=VARCHAR},
+      </if>
+      <if test="days != null">
+        #{days,jdbcType=DECIMAL},
+      </if>
+      <if test="park != null">
+        #{park,jdbcType=VARCHAR},
+      </if>
+      <if test="university != null">
+        #{university,jdbcType=VARCHAR},
+      </if>
+      <if test="sfsz != null">
+        #{sfsz,jdbcType=VARCHAR},
+      </if>
+      <if test="szschool != null">
+        #{szschool,jdbcType=VARCHAR},
+      </if>
+      <if test="szzy != null">
+        #{szzy,jdbcType=VARCHAR},
+      </if>
+      <if test="jobsId != null">
+        #{jobsId,jdbcType=VARCHAR},
+      </if>
+      <if test="skillId != null">
+        #{skillId,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeplace != null">
+        #{nativeplace,jdbcType=VARCHAR},
+      </if>
+      <if test="birthplace != null">
+        #{birthplace,jdbcType=VARCHAR},
+      </if>
+      <if test="profileLoc != null">
+        #{profileLoc,jdbcType=VARCHAR},
+      </if>
+      <if test="veteran != null">
+        #{veteran,jdbcType=VARCHAR},
+      </if>
+      <if test="veteranTime != null">
+        #{veteranTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="workTime != null">
+        #{workTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="certified != null">
+        #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.examplerocketmqproducer.bean.Personinfo">
+    update OMSS_PERSONNEL_PERSONINFO
+    <set>
+      <if test="personNum != null">
+        PERSON_NUM = #{personNum,jdbcType=VARCHAR},
+      </if>
+      <if test="personName != null">
+        PERSON_NAME = #{personName,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        GENDER = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="national != null">
+        NATIONAL = #{national,jdbcType=VARCHAR},
+      </if>
+      <if test="idnum != null">
+        IDNUM = #{idnum,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        BIRTHDAY = #{birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        AGE = #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="hukou != null">
+        HUKOU = #{hukou,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        MOBILE = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        PHONE = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="caddress != null">
+        CADDRESS = #{caddress,jdbcType=VARCHAR},
+      </if>
+      <if test="raddress != null">
+        RADDRESS = #{raddress,jdbcType=VARCHAR},
+      </if>
+      <if test="leveledu != null">
+        LEVELEDU = #{leveledu,jdbcType=VARCHAR},
+      </if>
+      <if test="fulltime != null">
+        FULLTIME = #{fulltime,jdbcType=VARCHAR},
+      </if>
+      <if test="professional != null">
+        PROFESSIONAL = #{professional,jdbcType=VARCHAR},
+      </if>
+      <if test="politicalStatus != null">
+        POLITICAL_STATUS = #{politicalStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="marriage != null">
+        MARRIAGE = #{marriage,jdbcType=VARCHAR},
+      </if>
+      <if test="health != null">
+        HEALTH = #{health,jdbcType=VARCHAR},
+      </if>
+      <if test="qualification != null">
+        QUALIFICATION = #{qualification,jdbcType=VARCHAR},
+      </if>
+      <if test="specialty != null">
+        SPECIALTY = #{specialty,jdbcType=VARCHAR},
+      </if>
+      <if test="personUid != null">
+        PERSON_UID = #{personUid,jdbcType=VARCHAR},
+      </if>
+      <if test="jobs != null">
+        JOBS = #{jobs,jdbcType=VARCHAR},
+      </if>
+      <if test="team != null">
+        TEAM = #{team,jdbcType=VARCHAR},
+      </if>
+      <if test="jobsSal != null">
+        JOBS_SAL = #{jobsSal,jdbcType=VARCHAR},
+      </if>
+      <if test="effect != null">
+        EFFECT = #{effect,jdbcType=VARCHAR},
+      </if>
+      <if test="total != null">
+        TOTAL = #{total,jdbcType=VARCHAR},
+      </if>
+      <if test="worktype != null">
+        WORKTYPE = #{worktype,jdbcType=VARCHAR},
+      </if>
+      <if test="level1 != null">
+        LEVEL1 = #{level1,jdbcType=VARCHAR},
+      </if>
+      <if test="membership != null">
+        MEMBERSHIP = #{membership,jdbcType=VARCHAR},
+      </if>
+      <if test="send != null">
+        SEND = #{send,jdbcType=VARCHAR},
+      </if>
+      <if test="joindate != null">
+        JOINDATE = #{joindate,jdbcType=VARCHAR},
+      </if>
+      <if test="mindate != null">
+        MINDATE = #{mindate,jdbcType=VARCHAR},
+      </if>
+      <if test="probation != null">
+        PROBATION = #{probation,jdbcType=VARCHAR},
+      </if>
+      <if test="csigndate != null">
+        CSIGNDATE = #{csigndate,jdbcType=VARCHAR},
+      </if>
+      <if test="zsign1date != null">
+        ZSIGN1DATE = #{zsign1date,jdbcType=VARCHAR},
+      </if>
+      <if test="xsign2date != null">
+        XSIGN2DATE = #{xsign2date,jdbcType=VARCHAR},
+      </if>
+      <if test="departure != null">
+        DEPARTURE = #{departure,jdbcType=VARCHAR},
+      </if>
+      <if test="leavedate != null">
+        LEAVEDATE = #{leavedate,jdbcType=VARCHAR},
+      </if>
+      <if test="gjjaccount != null">
+        GJJACCOUNT = #{gjjaccount,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null">
+        STATE = #{state,jdbcType=VARCHAR},
+      </if>
+      <if test="jjcontact != null">
+        JJCONTACT = #{jjcontact,jdbcType=VARCHAR},
+      </if>
+      <if test="jjphone != null">
+        JJPHONE = #{jjphone,jdbcType=VARCHAR},
+      </if>
+      <if test="jjname != null">
+        JJNAME = #{jjname,jdbcType=VARCHAR},
+      </if>
+      <if test="jobAddress != null">
+        JOB_ADDRESS = #{jobAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="skill != null">
+        SKILL = #{skill,jdbcType=VARCHAR},
+      </if>
+      <if test="level2 != null">
+        LEVEL2 = #{level2,jdbcType=VARCHAR},
+      </if>
+      <if test="wageNum != null">
+        WAGE_NUM = #{wageNum,jdbcType=VARCHAR},
+      </if>
+      <if test="createrid != null">
+        CREATERID = #{createrid,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        CREATETIME = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateid != null">
+        UPDATEID = #{updateid,jdbcType=VARCHAR},
+      </if>
+      <if test="updatetime != null">
+        UPDATETIME = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        REMARK = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="dept != null">
+        DEPT = #{dept,jdbcType=VARCHAR},
+      </if>
+      <if test="fjid != null">
+        FJID = #{fjid,jdbcType=VARCHAR},
+      </if>
+      <if test="flag != null">
+        FLAG = #{flag,jdbcType=VARCHAR},
+      </if>
+      <if test="days != null">
+        DAYS = #{days,jdbcType=DECIMAL},
+      </if>
+      <if test="park != null">
+        PARK = #{park,jdbcType=VARCHAR},
+      </if>
+      <if test="university != null">
+        UNIVERSITY = #{university,jdbcType=VARCHAR},
+      </if>
+      <if test="sfsz != null">
+        SFSZ = #{sfsz,jdbcType=VARCHAR},
+      </if>
+      <if test="szschool != null">
+        SZSCHOOL = #{szschool,jdbcType=VARCHAR},
+      </if>
+      <if test="szzy != null">
+        SZZY = #{szzy,jdbcType=VARCHAR},
+      </if>
+      <if test="jobsId != null">
+        JOBS_ID = #{jobsId,jdbcType=VARCHAR},
+      </if>
+      <if test="skillId != null">
+        SKILL_ID = #{skillId,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        COUNTRY = #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeplace != null">
+        NATIVEPLACE = #{nativeplace,jdbcType=VARCHAR},
+      </if>
+      <if test="birthplace != null">
+        BIRTHPLACE = #{birthplace,jdbcType=VARCHAR},
+      </if>
+      <if test="profileLoc != null">
+        PROFILE_LOC = #{profileLoc,jdbcType=VARCHAR},
+      </if>
+      <if test="veteran != null">
+        VETERAN = #{veteran,jdbcType=VARCHAR},
+      </if>
+      <if test="veteranTime != null">
+        VETERAN_TIME = #{veteranTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="workTime != null">
+        WORK_TIME = #{workTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="certified != null">
+        CERTIFIED = #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        EMAIL = #{email,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where OPPID = #{oppid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.examplerocketmqproducer.bean.Personinfo">
+    update OMSS_PERSONNEL_PERSONINFO
+    set PERSON_NUM = #{personNum,jdbcType=VARCHAR},
+      PERSON_NAME = #{personName,jdbcType=VARCHAR},
+      GENDER = #{gender,jdbcType=VARCHAR},
+      NATIONAL = #{national,jdbcType=VARCHAR},
+      IDNUM = #{idnum,jdbcType=VARCHAR},
+      BIRTHDAY = #{birthday,jdbcType=VARCHAR},
+      AGE = #{age,jdbcType=VARCHAR},
+      HUKOU = #{hukou,jdbcType=VARCHAR},
+      MOBILE = #{mobile,jdbcType=VARCHAR},
+      PHONE = #{phone,jdbcType=VARCHAR},
+      CADDRESS = #{caddress,jdbcType=VARCHAR},
+      RADDRESS = #{raddress,jdbcType=VARCHAR},
+      LEVELEDU = #{leveledu,jdbcType=VARCHAR},
+      FULLTIME = #{fulltime,jdbcType=VARCHAR},
+      PROFESSIONAL = #{professional,jdbcType=VARCHAR},
+      POLITICAL_STATUS = #{politicalStatus,jdbcType=VARCHAR},
+      MARRIAGE = #{marriage,jdbcType=VARCHAR},
+      HEALTH = #{health,jdbcType=VARCHAR},
+      QUALIFICATION = #{qualification,jdbcType=VARCHAR},
+      SPECIALTY = #{specialty,jdbcType=VARCHAR},
+      PERSON_UID = #{personUid,jdbcType=VARCHAR},
+      JOBS = #{jobs,jdbcType=VARCHAR},
+      TEAM = #{team,jdbcType=VARCHAR},
+      JOBS_SAL = #{jobsSal,jdbcType=VARCHAR},
+      EFFECT = #{effect,jdbcType=VARCHAR},
+      TOTAL = #{total,jdbcType=VARCHAR},
+      WORKTYPE = #{worktype,jdbcType=VARCHAR},
+      LEVEL1 = #{level1,jdbcType=VARCHAR},
+      MEMBERSHIP = #{membership,jdbcType=VARCHAR},
+      SEND = #{send,jdbcType=VARCHAR},
+      JOINDATE = #{joindate,jdbcType=VARCHAR},
+      MINDATE = #{mindate,jdbcType=VARCHAR},
+      PROBATION = #{probation,jdbcType=VARCHAR},
+      CSIGNDATE = #{csigndate,jdbcType=VARCHAR},
+      ZSIGN1DATE = #{zsign1date,jdbcType=VARCHAR},
+      XSIGN2DATE = #{xsign2date,jdbcType=VARCHAR},
+      DEPARTURE = #{departure,jdbcType=VARCHAR},
+      LEAVEDATE = #{leavedate,jdbcType=VARCHAR},
+      GJJACCOUNT = #{gjjaccount,jdbcType=VARCHAR},
+      STATE = #{state,jdbcType=VARCHAR},
+      JJCONTACT = #{jjcontact,jdbcType=VARCHAR},
+      JJPHONE = #{jjphone,jdbcType=VARCHAR},
+      JJNAME = #{jjname,jdbcType=VARCHAR},
+      JOB_ADDRESS = #{jobAddress,jdbcType=VARCHAR},
+      SKILL = #{skill,jdbcType=VARCHAR},
+      LEVEL2 = #{level2,jdbcType=VARCHAR},
+      WAGE_NUM = #{wageNum,jdbcType=VARCHAR},
+      CREATERID = #{createrid,jdbcType=VARCHAR},
+      CREATETIME = #{createtime,jdbcType=TIMESTAMP},
+      UPDATEID = #{updateid,jdbcType=VARCHAR},
+      UPDATETIME = #{updatetime,jdbcType=TIMESTAMP},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      DEPT = #{dept,jdbcType=VARCHAR},
+      FJID = #{fjid,jdbcType=VARCHAR},
+      FLAG = #{flag,jdbcType=VARCHAR},
+      DAYS = #{days,jdbcType=DECIMAL},
+      PARK = #{park,jdbcType=VARCHAR},
+      UNIVERSITY = #{university,jdbcType=VARCHAR},
+      SFSZ = #{sfsz,jdbcType=VARCHAR},
+      SZSCHOOL = #{szschool,jdbcType=VARCHAR},
+      SZZY = #{szzy,jdbcType=VARCHAR},
+      JOBS_ID = #{jobsId,jdbcType=VARCHAR},
+      SKILL_ID = #{skillId,jdbcType=VARCHAR},
+      COUNTRY = #{country,jdbcType=VARCHAR},
+      NATIVEPLACE = #{nativeplace,jdbcType=VARCHAR},
+      BIRTHPLACE = #{birthplace,jdbcType=VARCHAR},
+      PROFILE_LOC = #{profileLoc,jdbcType=VARCHAR},
+      VETERAN = #{veteran,jdbcType=VARCHAR},
+      VETERAN_TIME = #{veteranTime,jdbcType=TIMESTAMP},
+      WORK_TIME = #{workTime,jdbcType=TIMESTAMP},
+      CERTIFIED = #{certified,jdbcType=VARCHAR},
+      EMAIL = #{email,jdbcType=VARCHAR}
+    where OPPID = #{oppid,jdbcType=VARCHAR}
+  </update>
+  <resultMap id="BaseResultMap" type="com.example.examplerocketmqproducer.dao.oracle.Personinfo">
+    <constructor>
+      <idArg column="OPPID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PERSON_NUM" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PERSON_NAME" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="GENDER" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="NATIONAL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="IDNUM" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="BIRTHDAY" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="AGE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="HUKOU" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="MOBILE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PHONE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CADDRESS" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="RADDRESS" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LEVELEDU" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="FULLTIME" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PROFESSIONAL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="POLITICAL_STATUS" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="MARRIAGE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="HEALTH" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="QUALIFICATION" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SPECIALTY" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PERSON_UID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JOBS" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="TEAM" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JOBS_SAL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="EFFECT" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="TOTAL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="WORKTYPE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LEVEL1" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="MEMBERSHIP" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SEND" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JOINDATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="MINDATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PROBATION" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CSIGNDATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="ZSIGN1DATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="XSIGN2DATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="DEPARTURE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LEAVEDATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="GJJACCOUNT" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="STATE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JJCONTACT" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JJPHONE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JJNAME" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JOB_ADDRESS" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SKILL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LEVEL2" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="WAGE_NUM" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATERID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATETIME" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="UPDATEID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="UPDATETIME" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="REMARK" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="DEPT" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="FJID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="FLAG" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="DAYS" javaType="java.math.BigDecimal" jdbcType="DECIMAL" />
+      <arg column="PARK" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="UNIVERSITY" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SFSZ" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SZSCHOOL" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SZZY" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="JOBS_ID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="SKILL_ID" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="COUNTRY" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="NATIVEPLACE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="BIRTHPLACE" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PROFILE_LOC" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="VETERAN" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="VETERAN_TIME" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="WORK_TIME" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="CERTIFIED" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="EMAIL" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    OPPID, PERSON_NUM, PERSON_NAME, GENDER, NATIONAL, IDNUM, BIRTHDAY, AGE, HUKOU, MOBILE, 
+    PHONE, CADDRESS, RADDRESS, LEVELEDU, FULLTIME, PROFESSIONAL, POLITICAL_STATUS, MARRIAGE, 
+    HEALTH, QUALIFICATION, SPECIALTY, PERSON_UID, JOBS, TEAM, JOBS_SAL, EFFECT, TOTAL, 
+    WORKTYPE, LEVEL1, MEMBERSHIP, SEND, JOINDATE, MINDATE, PROBATION, CSIGNDATE, ZSIGN1DATE, 
+    XSIGN2DATE, DEPARTURE, LEAVEDATE, GJJACCOUNT, STATE, JJCONTACT, JJPHONE, JJNAME, 
+    JOB_ADDRESS, SKILL, LEVEL2, WAGE_NUM, CREATERID, CREATETIME, UPDATEID, UPDATETIME, 
+    REMARK, DEPT, FJID, FLAG, DAYS, PARK, UNIVERSITY, SFSZ, SZSCHOOL, SZZY, JOBS_ID, 
+    SKILL_ID, COUNTRY, NATIVEPLACE, BIRTHPLACE, PROFILE_LOC, VETERAN, VETERAN_TIME, WORK_TIME, 
+    CERTIFIED, EMAIL
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from OMSS_PERSONNEL_PERSONINFO
+    where OPPID = #{oppid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from OMSS_PERSONNEL_PERSONINFO
+    where OPPID = #{oppid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.example.examplerocketmqproducer.dao.oracle.Personinfo">
+    insert into OMSS_PERSONNEL_PERSONINFO (OPPID, PERSON_NUM, PERSON_NAME, 
+      GENDER, NATIONAL, IDNUM, 
+      BIRTHDAY, AGE, HUKOU, 
+      MOBILE, PHONE, CADDRESS, 
+      RADDRESS, LEVELEDU, FULLTIME, 
+      PROFESSIONAL, POLITICAL_STATUS, MARRIAGE, 
+      HEALTH, QUALIFICATION, SPECIALTY, 
+      PERSON_UID, JOBS, TEAM, 
+      JOBS_SAL, EFFECT, TOTAL, 
+      WORKTYPE, LEVEL1, MEMBERSHIP, 
+      SEND, JOINDATE, MINDATE, 
+      PROBATION, CSIGNDATE, ZSIGN1DATE, 
+      XSIGN2DATE, DEPARTURE, LEAVEDATE, 
+      GJJACCOUNT, STATE, JJCONTACT, 
+      JJPHONE, JJNAME, JOB_ADDRESS, 
+      SKILL, LEVEL2, WAGE_NUM, 
+      CREATERID, CREATETIME, UPDATEID, 
+      UPDATETIME, REMARK, DEPT, 
+      FJID, FLAG, DAYS, PARK, 
+      UNIVERSITY, SFSZ, SZSCHOOL, 
+      SZZY, JOBS_ID, SKILL_ID, 
+      COUNTRY, NATIVEPLACE, BIRTHPLACE, 
+      PROFILE_LOC, VETERAN, VETERAN_TIME, 
+      WORK_TIME, CERTIFIED, EMAIL
+      )
+    values (#{oppid,jdbcType=VARCHAR}, #{personNum,jdbcType=VARCHAR}, #{personName,jdbcType=VARCHAR}, 
+      #{gender,jdbcType=VARCHAR}, #{national,jdbcType=VARCHAR}, #{idnum,jdbcType=VARCHAR}, 
+      #{birthday,jdbcType=VARCHAR}, #{age,jdbcType=VARCHAR}, #{hukou,jdbcType=VARCHAR}, 
+      #{mobile,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{caddress,jdbcType=VARCHAR}, 
+      #{raddress,jdbcType=VARCHAR}, #{leveledu,jdbcType=VARCHAR}, #{fulltime,jdbcType=VARCHAR}, 
+      #{professional,jdbcType=VARCHAR}, #{politicalStatus,jdbcType=VARCHAR}, #{marriage,jdbcType=VARCHAR}, 
+      #{health,jdbcType=VARCHAR}, #{qualification,jdbcType=VARCHAR}, #{specialty,jdbcType=VARCHAR}, 
+      #{personUid,jdbcType=VARCHAR}, #{jobs,jdbcType=VARCHAR}, #{team,jdbcType=VARCHAR}, 
+      #{jobsSal,jdbcType=VARCHAR}, #{effect,jdbcType=VARCHAR}, #{total,jdbcType=VARCHAR}, 
+      #{worktype,jdbcType=VARCHAR}, #{level1,jdbcType=VARCHAR}, #{membership,jdbcType=VARCHAR}, 
+      #{send,jdbcType=VARCHAR}, #{joindate,jdbcType=VARCHAR}, #{mindate,jdbcType=VARCHAR}, 
+      #{probation,jdbcType=VARCHAR}, #{csigndate,jdbcType=VARCHAR}, #{zsign1date,jdbcType=VARCHAR}, 
+      #{xsign2date,jdbcType=VARCHAR}, #{departure,jdbcType=VARCHAR}, #{leavedate,jdbcType=VARCHAR}, 
+      #{gjjaccount,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR}, #{jjcontact,jdbcType=VARCHAR}, 
+      #{jjphone,jdbcType=VARCHAR}, #{jjname,jdbcType=VARCHAR}, #{jobAddress,jdbcType=VARCHAR}, 
+      #{skill,jdbcType=VARCHAR}, #{level2,jdbcType=VARCHAR}, #{wageNum,jdbcType=VARCHAR}, 
+      #{createrid,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{updateid,jdbcType=VARCHAR}, 
+      #{updatetime,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR}, #{dept,jdbcType=VARCHAR}, 
+      #{fjid,jdbcType=VARCHAR}, #{flag,jdbcType=VARCHAR}, #{days,jdbcType=DECIMAL}, #{park,jdbcType=VARCHAR}, 
+      #{university,jdbcType=VARCHAR}, #{sfsz,jdbcType=VARCHAR}, #{szschool,jdbcType=VARCHAR}, 
+      #{szzy,jdbcType=VARCHAR}, #{jobsId,jdbcType=VARCHAR}, #{skillId,jdbcType=VARCHAR}, 
+      #{country,jdbcType=VARCHAR}, #{nativeplace,jdbcType=VARCHAR}, #{birthplace,jdbcType=VARCHAR}, 
+      #{profileLoc,jdbcType=VARCHAR}, #{veteran,jdbcType=VARCHAR}, #{veteranTime,jdbcType=TIMESTAMP}, 
+      #{workTime,jdbcType=TIMESTAMP}, #{certified,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.examplerocketmqproducer.dao.oracle.Personinfo">
+    insert into OMSS_PERSONNEL_PERSONINFO
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="oppid != null">
+        OPPID,
+      </if>
+      <if test="personNum != null">
+        PERSON_NUM,
+      </if>
+      <if test="personName != null">
+        PERSON_NAME,
+      </if>
+      <if test="gender != null">
+        GENDER,
+      </if>
+      <if test="national != null">
+        NATIONAL,
+      </if>
+      <if test="idnum != null">
+        IDNUM,
+      </if>
+      <if test="birthday != null">
+        BIRTHDAY,
+      </if>
+      <if test="age != null">
+        AGE,
+      </if>
+      <if test="hukou != null">
+        HUKOU,
+      </if>
+      <if test="mobile != null">
+        MOBILE,
+      </if>
+      <if test="phone != null">
+        PHONE,
+      </if>
+      <if test="caddress != null">
+        CADDRESS,
+      </if>
+      <if test="raddress != null">
+        RADDRESS,
+      </if>
+      <if test="leveledu != null">
+        LEVELEDU,
+      </if>
+      <if test="fulltime != null">
+        FULLTIME,
+      </if>
+      <if test="professional != null">
+        PROFESSIONAL,
+      </if>
+      <if test="politicalStatus != null">
+        POLITICAL_STATUS,
+      </if>
+      <if test="marriage != null">
+        MARRIAGE,
+      </if>
+      <if test="health != null">
+        HEALTH,
+      </if>
+      <if test="qualification != null">
+        QUALIFICATION,
+      </if>
+      <if test="specialty != null">
+        SPECIALTY,
+      </if>
+      <if test="personUid != null">
+        PERSON_UID,
+      </if>
+      <if test="jobs != null">
+        JOBS,
+      </if>
+      <if test="team != null">
+        TEAM,
+      </if>
+      <if test="jobsSal != null">
+        JOBS_SAL,
+      </if>
+      <if test="effect != null">
+        EFFECT,
+      </if>
+      <if test="total != null">
+        TOTAL,
+      </if>
+      <if test="worktype != null">
+        WORKTYPE,
+      </if>
+      <if test="level1 != null">
+        LEVEL1,
+      </if>
+      <if test="membership != null">
+        MEMBERSHIP,
+      </if>
+      <if test="send != null">
+        SEND,
+      </if>
+      <if test="joindate != null">
+        JOINDATE,
+      </if>
+      <if test="mindate != null">
+        MINDATE,
+      </if>
+      <if test="probation != null">
+        PROBATION,
+      </if>
+      <if test="csigndate != null">
+        CSIGNDATE,
+      </if>
+      <if test="zsign1date != null">
+        ZSIGN1DATE,
+      </if>
+      <if test="xsign2date != null">
+        XSIGN2DATE,
+      </if>
+      <if test="departure != null">
+        DEPARTURE,
+      </if>
+      <if test="leavedate != null">
+        LEAVEDATE,
+      </if>
+      <if test="gjjaccount != null">
+        GJJACCOUNT,
+      </if>
+      <if test="state != null">
+        STATE,
+      </if>
+      <if test="jjcontact != null">
+        JJCONTACT,
+      </if>
+      <if test="jjphone != null">
+        JJPHONE,
+      </if>
+      <if test="jjname != null">
+        JJNAME,
+      </if>
+      <if test="jobAddress != null">
+        JOB_ADDRESS,
+      </if>
+      <if test="skill != null">
+        SKILL,
+      </if>
+      <if test="level2 != null">
+        LEVEL2,
+      </if>
+      <if test="wageNum != null">
+        WAGE_NUM,
+      </if>
+      <if test="createrid != null">
+        CREATERID,
+      </if>
+      <if test="createtime != null">
+        CREATETIME,
+      </if>
+      <if test="updateid != null">
+        UPDATEID,
+      </if>
+      <if test="updatetime != null">
+        UPDATETIME,
+      </if>
+      <if test="remark != null">
+        REMARK,
+      </if>
+      <if test="dept != null">
+        DEPT,
+      </if>
+      <if test="fjid != null">
+        FJID,
+      </if>
+      <if test="flag != null">
+        FLAG,
+      </if>
+      <if test="days != null">
+        DAYS,
+      </if>
+      <if test="park != null">
+        PARK,
+      </if>
+      <if test="university != null">
+        UNIVERSITY,
+      </if>
+      <if test="sfsz != null">
+        SFSZ,
+      </if>
+      <if test="szschool != null">
+        SZSCHOOL,
+      </if>
+      <if test="szzy != null">
+        SZZY,
+      </if>
+      <if test="jobsId != null">
+        JOBS_ID,
+      </if>
+      <if test="skillId != null">
+        SKILL_ID,
+      </if>
+      <if test="country != null">
+        COUNTRY,
+      </if>
+      <if test="nativeplace != null">
+        NATIVEPLACE,
+      </if>
+      <if test="birthplace != null">
+        BIRTHPLACE,
+      </if>
+      <if test="profileLoc != null">
+        PROFILE_LOC,
+      </if>
+      <if test="veteran != null">
+        VETERAN,
+      </if>
+      <if test="veteranTime != null">
+        VETERAN_TIME,
+      </if>
+      <if test="workTime != null">
+        WORK_TIME,
+      </if>
+      <if test="certified != null">
+        CERTIFIED,
+      </if>
+      <if test="email != null">
+        EMAIL,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="oppid != null">
+        #{oppid,jdbcType=VARCHAR},
+      </if>
+      <if test="personNum != null">
+        #{personNum,jdbcType=VARCHAR},
+      </if>
+      <if test="personName != null">
+        #{personName,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="national != null">
+        #{national,jdbcType=VARCHAR},
+      </if>
+      <if test="idnum != null">
+        #{idnum,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="hukou != null">
+        #{hukou,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="caddress != null">
+        #{caddress,jdbcType=VARCHAR},
+      </if>
+      <if test="raddress != null">
+        #{raddress,jdbcType=VARCHAR},
+      </if>
+      <if test="leveledu != null">
+        #{leveledu,jdbcType=VARCHAR},
+      </if>
+      <if test="fulltime != null">
+        #{fulltime,jdbcType=VARCHAR},
+      </if>
+      <if test="professional != null">
+        #{professional,jdbcType=VARCHAR},
+      </if>
+      <if test="politicalStatus != null">
+        #{politicalStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="marriage != null">
+        #{marriage,jdbcType=VARCHAR},
+      </if>
+      <if test="health != null">
+        #{health,jdbcType=VARCHAR},
+      </if>
+      <if test="qualification != null">
+        #{qualification,jdbcType=VARCHAR},
+      </if>
+      <if test="specialty != null">
+        #{specialty,jdbcType=VARCHAR},
+      </if>
+      <if test="personUid != null">
+        #{personUid,jdbcType=VARCHAR},
+      </if>
+      <if test="jobs != null">
+        #{jobs,jdbcType=VARCHAR},
+      </if>
+      <if test="team != null">
+        #{team,jdbcType=VARCHAR},
+      </if>
+      <if test="jobsSal != null">
+        #{jobsSal,jdbcType=VARCHAR},
+      </if>
+      <if test="effect != null">
+        #{effect,jdbcType=VARCHAR},
+      </if>
+      <if test="total != null">
+        #{total,jdbcType=VARCHAR},
+      </if>
+      <if test="worktype != null">
+        #{worktype,jdbcType=VARCHAR},
+      </if>
+      <if test="level1 != null">
+        #{level1,jdbcType=VARCHAR},
+      </if>
+      <if test="membership != null">
+        #{membership,jdbcType=VARCHAR},
+      </if>
+      <if test="send != null">
+        #{send,jdbcType=VARCHAR},
+      </if>
+      <if test="joindate != null">
+        #{joindate,jdbcType=VARCHAR},
+      </if>
+      <if test="mindate != null">
+        #{mindate,jdbcType=VARCHAR},
+      </if>
+      <if test="probation != null">
+        #{probation,jdbcType=VARCHAR},
+      </if>
+      <if test="csigndate != null">
+        #{csigndate,jdbcType=VARCHAR},
+      </if>
+      <if test="zsign1date != null">
+        #{zsign1date,jdbcType=VARCHAR},
+      </if>
+      <if test="xsign2date != null">
+        #{xsign2date,jdbcType=VARCHAR},
+      </if>
+      <if test="departure != null">
+        #{departure,jdbcType=VARCHAR},
+      </if>
+      <if test="leavedate != null">
+        #{leavedate,jdbcType=VARCHAR},
+      </if>
+      <if test="gjjaccount != null">
+        #{gjjaccount,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null">
+        #{state,jdbcType=VARCHAR},
+      </if>
+      <if test="jjcontact != null">
+        #{jjcontact,jdbcType=VARCHAR},
+      </if>
+      <if test="jjphone != null">
+        #{jjphone,jdbcType=VARCHAR},
+      </if>
+      <if test="jjname != null">
+        #{jjname,jdbcType=VARCHAR},
+      </if>
+      <if test="jobAddress != null">
+        #{jobAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="skill != null">
+        #{skill,jdbcType=VARCHAR},
+      </if>
+      <if test="level2 != null">
+        #{level2,jdbcType=VARCHAR},
+      </if>
+      <if test="wageNum != null">
+        #{wageNum,jdbcType=VARCHAR},
+      </if>
+      <if test="createrid != null">
+        #{createrid,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateid != null">
+        #{updateid,jdbcType=VARCHAR},
+      </if>
+      <if test="updatetime != null">
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="dept != null">
+        #{dept,jdbcType=VARCHAR},
+      </if>
+      <if test="fjid != null">
+        #{fjid,jdbcType=VARCHAR},
+      </if>
+      <if test="flag != null">
+        #{flag,jdbcType=VARCHAR},
+      </if>
+      <if test="days != null">
+        #{days,jdbcType=DECIMAL},
+      </if>
+      <if test="park != null">
+        #{park,jdbcType=VARCHAR},
+      </if>
+      <if test="university != null">
+        #{university,jdbcType=VARCHAR},
+      </if>
+      <if test="sfsz != null">
+        #{sfsz,jdbcType=VARCHAR},
+      </if>
+      <if test="szschool != null">
+        #{szschool,jdbcType=VARCHAR},
+      </if>
+      <if test="szzy != null">
+        #{szzy,jdbcType=VARCHAR},
+      </if>
+      <if test="jobsId != null">
+        #{jobsId,jdbcType=VARCHAR},
+      </if>
+      <if test="skillId != null">
+        #{skillId,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeplace != null">
+        #{nativeplace,jdbcType=VARCHAR},
+      </if>
+      <if test="birthplace != null">
+        #{birthplace,jdbcType=VARCHAR},
+      </if>
+      <if test="profileLoc != null">
+        #{profileLoc,jdbcType=VARCHAR},
+      </if>
+      <if test="veteran != null">
+        #{veteran,jdbcType=VARCHAR},
+      </if>
+      <if test="veteranTime != null">
+        #{veteranTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="workTime != null">
+        #{workTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="certified != null">
+        #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.examplerocketmqproducer.dao.oracle.Personinfo">
+    update OMSS_PERSONNEL_PERSONINFO
+    <set>
+      <if test="personNum != null">
+        PERSON_NUM = #{personNum,jdbcType=VARCHAR},
+      </if>
+      <if test="personName != null">
+        PERSON_NAME = #{personName,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        GENDER = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="national != null">
+        NATIONAL = #{national,jdbcType=VARCHAR},
+      </if>
+      <if test="idnum != null">
+        IDNUM = #{idnum,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        BIRTHDAY = #{birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        AGE = #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="hukou != null">
+        HUKOU = #{hukou,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        MOBILE = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        PHONE = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="caddress != null">
+        CADDRESS = #{caddress,jdbcType=VARCHAR},
+      </if>
+      <if test="raddress != null">
+        RADDRESS = #{raddress,jdbcType=VARCHAR},
+      </if>
+      <if test="leveledu != null">
+        LEVELEDU = #{leveledu,jdbcType=VARCHAR},
+      </if>
+      <if test="fulltime != null">
+        FULLTIME = #{fulltime,jdbcType=VARCHAR},
+      </if>
+      <if test="professional != null">
+        PROFESSIONAL = #{professional,jdbcType=VARCHAR},
+      </if>
+      <if test="politicalStatus != null">
+        POLITICAL_STATUS = #{politicalStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="marriage != null">
+        MARRIAGE = #{marriage,jdbcType=VARCHAR},
+      </if>
+      <if test="health != null">
+        HEALTH = #{health,jdbcType=VARCHAR},
+      </if>
+      <if test="qualification != null">
+        QUALIFICATION = #{qualification,jdbcType=VARCHAR},
+      </if>
+      <if test="specialty != null">
+        SPECIALTY = #{specialty,jdbcType=VARCHAR},
+      </if>
+      <if test="personUid != null">
+        PERSON_UID = #{personUid,jdbcType=VARCHAR},
+      </if>
+      <if test="jobs != null">
+        JOBS = #{jobs,jdbcType=VARCHAR},
+      </if>
+      <if test="team != null">
+        TEAM = #{team,jdbcType=VARCHAR},
+      </if>
+      <if test="jobsSal != null">
+        JOBS_SAL = #{jobsSal,jdbcType=VARCHAR},
+      </if>
+      <if test="effect != null">
+        EFFECT = #{effect,jdbcType=VARCHAR},
+      </if>
+      <if test="total != null">
+        TOTAL = #{total,jdbcType=VARCHAR},
+      </if>
+      <if test="worktype != null">
+        WORKTYPE = #{worktype,jdbcType=VARCHAR},
+      </if>
+      <if test="level1 != null">
+        LEVEL1 = #{level1,jdbcType=VARCHAR},
+      </if>
+      <if test="membership != null">
+        MEMBERSHIP = #{membership,jdbcType=VARCHAR},
+      </if>
+      <if test="send != null">
+        SEND = #{send,jdbcType=VARCHAR},
+      </if>
+      <if test="joindate != null">
+        JOINDATE = #{joindate,jdbcType=VARCHAR},
+      </if>
+      <if test="mindate != null">
+        MINDATE = #{mindate,jdbcType=VARCHAR},
+      </if>
+      <if test="probation != null">
+        PROBATION = #{probation,jdbcType=VARCHAR},
+      </if>
+      <if test="csigndate != null">
+        CSIGNDATE = #{csigndate,jdbcType=VARCHAR},
+      </if>
+      <if test="zsign1date != null">
+        ZSIGN1DATE = #{zsign1date,jdbcType=VARCHAR},
+      </if>
+      <if test="xsign2date != null">
+        XSIGN2DATE = #{xsign2date,jdbcType=VARCHAR},
+      </if>
+      <if test="departure != null">
+        DEPARTURE = #{departure,jdbcType=VARCHAR},
+      </if>
+      <if test="leavedate != null">
+        LEAVEDATE = #{leavedate,jdbcType=VARCHAR},
+      </if>
+      <if test="gjjaccount != null">
+        GJJACCOUNT = #{gjjaccount,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null">
+        STATE = #{state,jdbcType=VARCHAR},
+      </if>
+      <if test="jjcontact != null">
+        JJCONTACT = #{jjcontact,jdbcType=VARCHAR},
+      </if>
+      <if test="jjphone != null">
+        JJPHONE = #{jjphone,jdbcType=VARCHAR},
+      </if>
+      <if test="jjname != null">
+        JJNAME = #{jjname,jdbcType=VARCHAR},
+      </if>
+      <if test="jobAddress != null">
+        JOB_ADDRESS = #{jobAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="skill != null">
+        SKILL = #{skill,jdbcType=VARCHAR},
+      </if>
+      <if test="level2 != null">
+        LEVEL2 = #{level2,jdbcType=VARCHAR},
+      </if>
+      <if test="wageNum != null">
+        WAGE_NUM = #{wageNum,jdbcType=VARCHAR},
+      </if>
+      <if test="createrid != null">
+        CREATERID = #{createrid,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        CREATETIME = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateid != null">
+        UPDATEID = #{updateid,jdbcType=VARCHAR},
+      </if>
+      <if test="updatetime != null">
+        UPDATETIME = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        REMARK = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="dept != null">
+        DEPT = #{dept,jdbcType=VARCHAR},
+      </if>
+      <if test="fjid != null">
+        FJID = #{fjid,jdbcType=VARCHAR},
+      </if>
+      <if test="flag != null">
+        FLAG = #{flag,jdbcType=VARCHAR},
+      </if>
+      <if test="days != null">
+        DAYS = #{days,jdbcType=DECIMAL},
+      </if>
+      <if test="park != null">
+        PARK = #{park,jdbcType=VARCHAR},
+      </if>
+      <if test="university != null">
+        UNIVERSITY = #{university,jdbcType=VARCHAR},
+      </if>
+      <if test="sfsz != null">
+        SFSZ = #{sfsz,jdbcType=VARCHAR},
+      </if>
+      <if test="szschool != null">
+        SZSCHOOL = #{szschool,jdbcType=VARCHAR},
+      </if>
+      <if test="szzy != null">
+        SZZY = #{szzy,jdbcType=VARCHAR},
+      </if>
+      <if test="jobsId != null">
+        JOBS_ID = #{jobsId,jdbcType=VARCHAR},
+      </if>
+      <if test="skillId != null">
+        SKILL_ID = #{skillId,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        COUNTRY = #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeplace != null">
+        NATIVEPLACE = #{nativeplace,jdbcType=VARCHAR},
+      </if>
+      <if test="birthplace != null">
+        BIRTHPLACE = #{birthplace,jdbcType=VARCHAR},
+      </if>
+      <if test="profileLoc != null">
+        PROFILE_LOC = #{profileLoc,jdbcType=VARCHAR},
+      </if>
+      <if test="veteran != null">
+        VETERAN = #{veteran,jdbcType=VARCHAR},
+      </if>
+      <if test="veteranTime != null">
+        VETERAN_TIME = #{veteranTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="workTime != null">
+        WORK_TIME = #{workTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="certified != null">
+        CERTIFIED = #{certified,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        EMAIL = #{email,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where OPPID = #{oppid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.examplerocketmqproducer.dao.oracle.Personinfo">
+    update OMSS_PERSONNEL_PERSONINFO
+    set PERSON_NUM = #{personNum,jdbcType=VARCHAR},
+      PERSON_NAME = #{personName,jdbcType=VARCHAR},
+      GENDER = #{gender,jdbcType=VARCHAR},
+      NATIONAL = #{national,jdbcType=VARCHAR},
+      IDNUM = #{idnum,jdbcType=VARCHAR},
+      BIRTHDAY = #{birthday,jdbcType=VARCHAR},
+      AGE = #{age,jdbcType=VARCHAR},
+      HUKOU = #{hukou,jdbcType=VARCHAR},
+      MOBILE = #{mobile,jdbcType=VARCHAR},
+      PHONE = #{phone,jdbcType=VARCHAR},
+      CADDRESS = #{caddress,jdbcType=VARCHAR},
+      RADDRESS = #{raddress,jdbcType=VARCHAR},
+      LEVELEDU = #{leveledu,jdbcType=VARCHAR},
+      FULLTIME = #{fulltime,jdbcType=VARCHAR},
+      PROFESSIONAL = #{professional,jdbcType=VARCHAR},
+      POLITICAL_STATUS = #{politicalStatus,jdbcType=VARCHAR},
+      MARRIAGE = #{marriage,jdbcType=VARCHAR},
+      HEALTH = #{health,jdbcType=VARCHAR},
+      QUALIFICATION = #{qualification,jdbcType=VARCHAR},
+      SPECIALTY = #{specialty,jdbcType=VARCHAR},
+      PERSON_UID = #{personUid,jdbcType=VARCHAR},
+      JOBS = #{jobs,jdbcType=VARCHAR},
+      TEAM = #{team,jdbcType=VARCHAR},
+      JOBS_SAL = #{jobsSal,jdbcType=VARCHAR},
+      EFFECT = #{effect,jdbcType=VARCHAR},
+      TOTAL = #{total,jdbcType=VARCHAR},
+      WORKTYPE = #{worktype,jdbcType=VARCHAR},
+      LEVEL1 = #{level1,jdbcType=VARCHAR},
+      MEMBERSHIP = #{membership,jdbcType=VARCHAR},
+      SEND = #{send,jdbcType=VARCHAR},
+      JOINDATE = #{joindate,jdbcType=VARCHAR},
+      MINDATE = #{mindate,jdbcType=VARCHAR},
+      PROBATION = #{probation,jdbcType=VARCHAR},
+      CSIGNDATE = #{csigndate,jdbcType=VARCHAR},
+      ZSIGN1DATE = #{zsign1date,jdbcType=VARCHAR},
+      XSIGN2DATE = #{xsign2date,jdbcType=VARCHAR},
+      DEPARTURE = #{departure,jdbcType=VARCHAR},
+      LEAVEDATE = #{leavedate,jdbcType=VARCHAR},
+      GJJACCOUNT = #{gjjaccount,jdbcType=VARCHAR},
+      STATE = #{state,jdbcType=VARCHAR},
+      JJCONTACT = #{jjcontact,jdbcType=VARCHAR},
+      JJPHONE = #{jjphone,jdbcType=VARCHAR},
+      JJNAME = #{jjname,jdbcType=VARCHAR},
+      JOB_ADDRESS = #{jobAddress,jdbcType=VARCHAR},
+      SKILL = #{skill,jdbcType=VARCHAR},
+      LEVEL2 = #{level2,jdbcType=VARCHAR},
+      WAGE_NUM = #{wageNum,jdbcType=VARCHAR},
+      CREATERID = #{createrid,jdbcType=VARCHAR},
+      CREATETIME = #{createtime,jdbcType=TIMESTAMP},
+      UPDATEID = #{updateid,jdbcType=VARCHAR},
+      UPDATETIME = #{updatetime,jdbcType=TIMESTAMP},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      DEPT = #{dept,jdbcType=VARCHAR},
+      FJID = #{fjid,jdbcType=VARCHAR},
+      FLAG = #{flag,jdbcType=VARCHAR},
+      DAYS = #{days,jdbcType=DECIMAL},
+      PARK = #{park,jdbcType=VARCHAR},
+      UNIVERSITY = #{university,jdbcType=VARCHAR},
+      SFSZ = #{sfsz,jdbcType=VARCHAR},
+      SZSCHOOL = #{szschool,jdbcType=VARCHAR},
+      SZZY = #{szzy,jdbcType=VARCHAR},
+      JOBS_ID = #{jobsId,jdbcType=VARCHAR},
+      SKILL_ID = #{skillId,jdbcType=VARCHAR},
+      COUNTRY = #{country,jdbcType=VARCHAR},
+      NATIVEPLACE = #{nativeplace,jdbcType=VARCHAR},
+      BIRTHPLACE = #{birthplace,jdbcType=VARCHAR},
+      PROFILE_LOC = #{profileLoc,jdbcType=VARCHAR},
+      VETERAN = #{veteran,jdbcType=VARCHAR},
+      VETERAN_TIME = #{veteranTime,jdbcType=TIMESTAMP},
+      WORK_TIME = #{workTime,jdbcType=TIMESTAMP},
+      CERTIFIED = #{certified,jdbcType=VARCHAR},
+      EMAIL = #{email,jdbcType=VARCHAR}
+    where OPPID = #{oppid,jdbcType=VARCHAR}
+  </update>
+</mapper>

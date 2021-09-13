@@ -1,0 +1,12 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver  # \u9A71\u52A8\u5305
+    url: jdbc:oracle:thin:@127.0.0.1:1521:orcl  # \\u8FDE\u63A5\u5730\u5740
+    username: sh_12345hotline # \\u7528\u6237\u540D
+    password: sh_12345hotline # \\u5BC6\u7801
+
+mybatis-plus:
+  mapper-locations: classpath:mybatis/oracle/*.xml

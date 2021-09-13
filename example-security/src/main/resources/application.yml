@@ -1,0 +1,14 @@
+server:
+  port: 8502
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://121.4.53.134:3306/example
+    username: root
+    password: zhaofang1234
+
+mybatis-plus:
+#  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true  #\u5F00\u542FMybatis\u4E0B\u5212\u7EBF\u547D\u540D\u8F6C\u9A7C\u5CF0\u547D\u540D

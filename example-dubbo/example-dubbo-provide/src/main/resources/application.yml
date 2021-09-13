@@ -1,0 +1,13 @@
+
+dubbo:
+  application:
+    name: myProvider
+  registry:
+    address: zookeeper://121.4.53.134:2181
+    timeout: 15000
+
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages: com.example.dubbo.privide.service.impl

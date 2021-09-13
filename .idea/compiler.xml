@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="example-common" />
+        <module name="example-dubbo-consumer" />
+        <module name="example-dubbo-provide" />
+        <module name="example-elasicjob" />
+        <module name="example-elasticjob2" />
+        <module name="example-elasticsearch-data" />
+        <module name="example-mult-datasource" />
+        <module name="example-redis" />
+        <module name="example-rocketmq" />
+        <module name="example-rocketmq-consumer" />
+        <module name="example-rocketmq-producer" />
+        <module name="example-rocketmq-template" />
+        <module name="example-security" />
+        <module name="example-shiro" />
+        <module name="example-zklock" />
+        <module name="job-common" />
+        <module name="job-elastic" />
+        <module name="job-quartz" />
+        <module name="job-scheduled" />
+        <module name="job-timer" />
+        <module name="job-xxl" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="example-common" target="1.8" />
+      <module name="example-dubbo" target="1.8" />
+      <module name="example-dubbo-consumer" target="1.8" />
+      <module name="example-dubbo-interface" target="1.8" />
+      <module name="example-dubbo-provide" target="1.8" />
+      <module name="example-elasicjob" target="1.8" />
+      <module name="example-elasticjob2" target="1.8" />
+      <module name="example-elasticsearch-data" target="1.8" />
+      <module name="example-job" target="1.8" />
+      <module name="example-mult-datasource" target="1.8" />
+      <module name="example-redis" target="1.8" />
+      <module name="example-rocketmq" target="1.8" />
+      <module name="example-rocketmq-consumer" target="1.8" />
+      <module name="example-rocketmq-producer" target="1.8" />
+      <module name="example-rocketmq-template" target="1.8" />
+      <module name="example-security" target="1.8" />
+      <module name="example-shiro" target="1.8" />
+      <module name="example-xxx" target="1.8" />
+      <module name="example-zklock" target="1.8" />
+      <module name="examplecommon" target="1.7" />
+      <module name="exampleelasicjob" target="1.8" />
+      <module name="job-common" target="1.8" />
+      <module name="job-elastic" target="1.8" />
+      <module name="job-quartz" target="1.8" />
+      <module name="job-scheduled" target="1.8" />
+      <module name="job-timer" target="1.8" />
+      <module name="job-xxl" target="1.8" />
+      <module name="springboot-manager" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="example-common" options="-parameters" />
+      <module name="example-dubbo" options="" />
+      <module name="example-dubbo-consumer" options="-parameters" />
+      <module name="example-dubbo-interface" options="" />
+      <module name="example-dubbo-provide" options="-parameters" />
+      <module name="example-elasicjob" options="-parameters" />
+      <module name="example-elasticjob2" options="-parameters" />
+      <module name="example-elasticsearch-data" options="-parameters" />
+      <module name="example-job" options="" />
+      <module name="example-mult-datasource" options="-parameters" />
+      <module name="example-redis" options="-parameters" />
+      <module name="example-rocketmq" options="-parameters" />
+      <module name="example-rocketmq-consumer" options="-parameters" />
+      <module name="example-rocketmq-producer" options="-parameters" />
+      <module name="example-rocketmq-template" options="-parameters" />
+      <module name="example-security" options="-parameters" />
+      <module name="example-shiro" options="-parameters" />
+      <module name="example-xxx" options="-parameters" />
+      <module name="example-zklock" options="-parameters" />
+      <module name="examplecommon" options="-parameters" />
+      <module name="exampleelasicjob" options="-parameters" />
+      <module name="job-common" options="-parameters" />
+      <module name="job-elastic" options="-parameters" />
+      <module name="job-quartz" options="-parameters" />
+      <module name="job-scheduled" options="-parameters" />
+      <module name="job-timer" options="-parameters" />
+      <module name="job-xxl" options="-parameters" />
+      <module name="springboot-manager" options="" />
+    </option>
+  </component>
+</project>

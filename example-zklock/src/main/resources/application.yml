@@ -1,0 +1,24 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: example-zk
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/example?characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+app:
+  id: springboot-apollo
+apollo:
+  meta: http://121.4.53.134:8080/
+  bootstrap:
+    enabled: true
+    eagerLoad:
+      enabled: true
+

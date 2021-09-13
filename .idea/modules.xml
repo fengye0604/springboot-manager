@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/example-common/example-common.iml" filepath="$PROJECT_DIR$/example-common/example-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-dubbo/example-dubbo.iml" filepath="$PROJECT_DIR$/example-dubbo/example-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-dubbo/example-dubbo-consumer/example-dubbo-consumer.iml" filepath="$PROJECT_DIR$/example-dubbo/example-dubbo-consumer/example-dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-dubbo/example-dubbo-interface/example-dubbo-interface.iml" filepath="$PROJECT_DIR$/example-dubbo/example-dubbo-interface/example-dubbo-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-dubbo/example-dubbo-provide/example-dubbo-provide.iml" filepath="$PROJECT_DIR$/example-dubbo/example-dubbo-provide/example-dubbo-provide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-elasicjob/example-elasicjob.iml" filepath="$PROJECT_DIR$/example-elasicjob/example-elasicjob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-elasticjob2/example-elasticjob2.iml" filepath="$PROJECT_DIR$/example-elasticjob2/example-elasticjob2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-elasticsearch-data/example-elasticsearch-data.iml" filepath="$PROJECT_DIR$/example-elasticsearch-data/example-elasticsearch-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-job/example-job.iml" filepath="$PROJECT_DIR$/example-job/example-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-mult-datasource/example-mult-datasource.iml" filepath="$PROJECT_DIR$/example-mult-datasource/example-mult-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-redis/example-redis.iml" filepath="$PROJECT_DIR$/example-redis/example-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-rocketmq/example-rocketmq.iml" filepath="$PROJECT_DIR$/example-rocketmq/example-rocketmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-rocketmq-consumer/example-rocketmq-consumer.iml" filepath="$PROJECT_DIR$/example-rocketmq-consumer/example-rocketmq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-rocketmq-producer/example-rocketmq-producer.iml" filepath="$PROJECT_DIR$/example-rocketmq-producer/example-rocketmq-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-rocketmq-template/example-rocketmq-template.iml" filepath="$PROJECT_DIR$/example-rocketmq-template/example-rocketmq-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-security/example-security.iml" filepath="$PROJECT_DIR$/example-security/example-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-shiro/example-shiro.iml" filepath="$PROJECT_DIR$/example-shiro/example-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-zklock/example-zklock.iml" filepath="$PROJECT_DIR$/example-zklock/example-zklock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-job/job-common/job-common.iml" filepath="$PROJECT_DIR$/example-job/job-common/job-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-job/job-elastic/job-elastic.iml" filepath="$PROJECT_DIR$/example-job/job-elastic/job-elastic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-job/job-quartz/job-quartz.iml" filepath="$PROJECT_DIR$/example-job/job-quartz/job-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-job/job-scheduled/job-scheduled.iml" filepath="$PROJECT_DIR$/example-job/job-scheduled/job-scheduled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-job/job-timer/job-timer.iml" filepath="$PROJECT_DIR$/example-job/job-timer/job-timer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-job/job-xxl/job-xxl.iml" filepath="$PROJECT_DIR$/example-job/job-xxl/job-xxl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-manager.iml" filepath="$PROJECT_DIR$/springboot-manager.iml" />
+    </modules>
+  </component>
+</project>
