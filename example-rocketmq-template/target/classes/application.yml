@@ -1,0 +1,7 @@
+
+rocketmq:
+  name-server: 123.57.91.202:9876
+  producer:
+    group: test_producer
+server:
+  port: 8088

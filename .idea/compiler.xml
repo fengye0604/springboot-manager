@@ -15,6 +15,7 @@
         <module name="example-elasticsearch-data" />
         <module name="example-mult-datasource" />
         <module name="example-redis" />
+        <module name="example-rest" />
         <module name="example-rocketmq" />
         <module name="example-rocketmq-consumer" />
         <module name="example-rocketmq-producer" />
@@ -42,6 +43,7 @@
       <module name="example-job" target="1.8" />
       <module name="example-mult-datasource" target="1.8" />
       <module name="example-redis" target="1.8" />
+      <module name="example-rest" target="1.8" />
       <module name="example-rocketmq" target="1.8" />
       <module name="example-rocketmq-consumer" target="1.8" />
       <module name="example-rocketmq-producer" target="1.8" />
@@ -74,6 +76,7 @@
       <module name="example-job" options="" />
       <module name="example-mult-datasource" options="-parameters" />
       <module name="example-redis" options="-parameters" />
+      <module name="example-rest" options="-parameters" />
       <module name="example-rocketmq" options="-parameters" />
       <module name="example-rocketmq-consumer" options="-parameters" />
       <module name="example-rocketmq-producer" options="-parameters" />

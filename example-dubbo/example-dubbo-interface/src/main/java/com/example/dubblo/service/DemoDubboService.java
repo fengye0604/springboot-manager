@@ -9,6 +9,5 @@ package com.example.dubblo.service;
  * @version:1.0
  */
 public interface DemoDubboService {
-
     String showMsg(String str);
 }

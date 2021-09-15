@@ -1,0 +1,14 @@
+server:
+  port: 8401
+
+elasticjob:
+  regCenter:
+    serverLists: 121.4.53.134:2181
+    namespace: elasticjob-lite-springboot
+  jobs:
+    simpleJob:
+      elasticJobClass: com.example.job.elastic.job.MySimpleJob
+      cron: 0/5 * * * * ?
+      shardingTotalCount: 3
+      shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
+

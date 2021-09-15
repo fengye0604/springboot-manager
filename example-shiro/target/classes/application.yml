@@ -1,0 +1,9 @@
+server:
+  port: 8500
+
+demo:
+  isopen: true
+  say-what: hello
+  to-who: 杨高利
+
+

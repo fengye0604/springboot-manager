@@ -12,8 +12,8 @@ public class DemoServiceImpl implements DemoService {
     @Reference
     private DemoDubboService demoDubboService;
 
-    @Override
-    public String getMsg(String str) {
-        return this.demoDubboService.showMsg(str);
-    }
+   @Override
+   public String getMsg(String str) {
+       return demoDubboService.showMsg(str);
+   }
 }

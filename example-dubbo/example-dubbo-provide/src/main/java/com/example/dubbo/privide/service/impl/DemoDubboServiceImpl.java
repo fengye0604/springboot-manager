@@ -4,6 +4,7 @@ import com.example.dubblo.service.DemoDubboService;
 import org.apache.dubbo.config.annotation.Service;
 
 
+
 @Service
 public class DemoDubboServiceImpl implements DemoDubboService {
     @Override
