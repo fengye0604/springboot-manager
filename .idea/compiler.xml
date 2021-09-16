@@ -54,13 +54,13 @@
       <module name="example-zklock" target="1.8" />
       <module name="examplecommon" target="1.7" />
       <module name="exampleelasicjob" target="1.8" />
+      <module name="https://github.com/fengye0604/springboot-manager.git" target="1.8" />
       <module name="job-common" target="1.8" />
       <module name="job-elastic" target="1.8" />
       <module name="job-quartz" target="1.8" />
       <module name="job-scheduled" target="1.8" />
       <module name="job-timer" target="1.8" />
       <module name="job-xxl" target="1.8" />
-      <module name="springboot-manager" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -87,13 +87,13 @@
       <module name="example-zklock" options="-parameters" />
       <module name="examplecommon" options="-parameters" />
       <module name="exampleelasicjob" options="-parameters" />
+      <module name="https://github.com/fengye0604/springboot-manager.git" options="" />
       <module name="job-common" options="-parameters" />
       <module name="job-elastic" options="-parameters" />
       <module name="job-quartz" options="-parameters" />
       <module name="job-scheduled" options="-parameters" />
       <module name="job-timer" options="-parameters" />
       <module name="job-xxl" options="-parameters" />
-      <module name="springboot-manager" options="" />
     </option>
   </component>
 </project>
