@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e281a181-0aab-4d07-ba5a-0a06345f7242" name="Default Changelist" comment="提交分支代码">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="e281a181-0aab-4d07-ba5a-0a06345f7242" name="Default Changelist" comment="本地修改提交代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -391,7 +390,7 @@
       <workItem from="1631492708364" duration="404000" />
       <workItem from="1631632888227" duration="13118000" />
       <workItem from="1631801889810" duration="669000" />
-      <workItem from="1632146170243" duration="3455000" />
+      <workItem from="1632146170243" duration="4814000" />
     </task>
     <task id="LOCAL-00001" summary="提交分支代码">
       <created>1632146664458</created>
@@ -400,7 +399,21 @@
       <option name="project" value="LOCAL" />
       <updated>1632146664458</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改提交">
+      <created>1632150460977</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632150460977</updated>
+    </task>
+    <task id="LOCAL-00003" summary="本地修改提交代码">
+      <created>1632150729588</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632150729588</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -460,21 +473,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交分支代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交分支代码" />
+    <MESSAGE value="修改提交" />
+    <MESSAGE value="本地修改提交代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="本地修改提交代码" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="54" key="DiffContextDialog" timestamp="1632146677239">
+    <state x="96" y="54" key="DiffContextDialog" timestamp="1632150824188">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="96" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1632146677239" />
+    <state x="96" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1632150824188" />
     <state x="343" y="64" key="RollbackChangesDialog" timestamp="1632146598287">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="343" y="64" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1632146598287" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1632147722884">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1632151225209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1632147722884" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1632151225209" />
     <state x="349" y="150" key="git4idea.merge.GitPullDialog" timestamp="1632147763187">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
