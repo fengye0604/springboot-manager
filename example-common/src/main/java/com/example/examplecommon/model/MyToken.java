@@ -7,5 +7,5 @@ import lombok.Data;
  */
 @Data
 public class MyToken {
-    private String token = "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";
+    private String token = "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";
 }
