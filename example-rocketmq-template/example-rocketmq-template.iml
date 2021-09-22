@@ -33,7 +33,7 @@
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.11" level="project" />
     <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-acl:4.7.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-remoting:4.7.1" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.69" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.47" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.55.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-tcnative-boringssl-static:2.0.35.Final" level="project" />
     <orderEntry type="library" name="Maven: org.apache.rocketmq:rocketmq-logging:4.7.1" level="project" />

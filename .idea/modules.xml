@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/example-apollo/example-apollo.iml" filepath="$PROJECT_DIR$/example-apollo/example-apollo.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-common/example-common.iml" filepath="$PROJECT_DIR$/example-common/example-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-dubbo/example-dubbo.iml" filepath="$PROJECT_DIR$/example-dubbo/example-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-dubbo/example-dubbo-consumer/example-dubbo-consumer.iml" filepath="$PROJECT_DIR$/example-dubbo/example-dubbo-consumer/example-dubbo-consumer.iml" />
@@ -21,13 +22,13 @@
       <module fileurl="file://$PROJECT_DIR$/example-security/example-security.iml" filepath="$PROJECT_DIR$/example-security/example-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-shiro/example-shiro.iml" filepath="$PROJECT_DIR$/example-shiro/example-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-zklock/example-zklock.iml" filepath="$PROJECT_DIR$/example-zklock/example-zklock.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot-manager.iml" filepath="$PROJECT_DIR$/springboot-manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-job/job-common/job-common.iml" filepath="$PROJECT_DIR$/example-job/job-common/job-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-job/job-elastic/job-elastic.iml" filepath="$PROJECT_DIR$/example-job/job-elastic/job-elastic.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-job/job-quartz/job-quartz.iml" filepath="$PROJECT_DIR$/example-job/job-quartz/job-quartz.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-job/job-scheduled/job-scheduled.iml" filepath="$PROJECT_DIR$/example-job/job-scheduled/job-scheduled.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-job/job-timer/job-timer.iml" filepath="$PROJECT_DIR$/example-job/job-timer/job-timer.iml" />
       <module fileurl="file://$PROJECT_DIR$/example-job/job-xxl/job-xxl.iml" filepath="$PROJECT_DIR$/example-job/job-xxl/job-xxl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-manager.iml" filepath="$PROJECT_DIR$/springboot-manager.iml" />
     </modules>
   </component>
 </project>

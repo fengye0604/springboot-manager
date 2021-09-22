@@ -7,31 +7,33 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="example-common" />
-        <module name="example-dubbo-consumer" />
-        <module name="example-dubbo-provide" />
-        <module name="example-elasicjob" />
-        <module name="example-elasticjob2" />
-        <module name="example-elasticsearch-data" />
-        <module name="example-mult-datasource" />
-        <module name="example-redis" />
-        <module name="example-rest" />
-        <module name="example-rocketmq" />
-        <module name="example-rocketmq-consumer" />
-        <module name="example-rocketmq-producer" />
-        <module name="example-rocketmq-template" />
-        <module name="example-security" />
-        <module name="example-shiro" />
-        <module name="example-zklock" />
-        <module name="job-common" />
-        <module name="job-elastic" />
-        <module name="job-quartz" />
-        <module name="job-scheduled" />
-        <module name="job-timer" />
+        <module name="example-apollo" />
         <module name="job-xxl" />
+        <module name="example-shiro" />
+        <module name="job-quartz" />
+        <module name="example-common" />
+        <module name="job-scheduled" />
+        <module name="example-elasticsearch-data" />
+        <module name="example-elasicjob" />
+        <module name="example-zklock" />
+        <module name="example-rocketmq-consumer" />
+        <module name="example-dubbo-provide" />
+        <module name="example-rocketmq-template" />
+        <module name="example-mult-datasource" />
+        <module name="example-rocketmq-producer" />
+        <module name="example-elasticjob2" />
+        <module name="example-rocketmq" />
+        <module name="example-dubbo-consumer" />
+        <module name="job-elastic" />
+        <module name="example-security" />
+        <module name="job-timer" />
+        <module name="example-redis" />
+        <module name="job-common" />
+        <module name="example-rest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="example-apollo" target="1.8" />
       <module name="example-common" target="1.8" />
       <module name="example-dubbo" target="1.8" />
       <module name="example-dubbo-consumer" target="1.8" />
@@ -61,10 +63,12 @@
       <module name="job-scheduled" target="1.8" />
       <module name="job-timer" target="1.8" />
       <module name="job-xxl" target="1.8" />
+      <module name="springboot-manager" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="example-apollo" options="-parameters" />
       <module name="example-common" options="-parameters" />
       <module name="example-dubbo" options="" />
       <module name="example-dubbo-consumer" options="-parameters" />
