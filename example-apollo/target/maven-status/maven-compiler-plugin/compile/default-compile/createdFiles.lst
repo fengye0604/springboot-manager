@@ -1,0 +1,5 @@
+com\example\exampleapollo\config\JavaConfigBean.class
+com\example\exampleapollo\config\MybatisPlusConfig.class
+com\example\exampleapollo\controller\TestController.class
+com\example\exampleapollo\ApolloApplication.class
+com\example\exampleapollo\utils\CodeUtils.class
